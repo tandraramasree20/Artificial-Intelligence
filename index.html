@@ -10,7 +10,7 @@
 <header class="site-header">
   <a class="brand" href="#home" aria-label="AI Smart Course Portal home"><span class="brand-mark">AI</span><span><strong>AI Smart Course Portal</strong><small>U24CD501 · B.E. CSE · 2026–27</small></span></a>
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-  <nav id="mainNav"><a href="#overview">Overview</a><a href="#outcomes">Course Outcomes</a><a href="#syllabus">Syllabus</a><a href="#calendar">Plan</a><a href="#learning">Activities</a><a href="#assessment">Assessment</a></nav>
+  <nav id="mainNav"><a href="#overview">Overview</a><a href="#outcomes">Course Outcomes</a><a href="#syllabus">Syllabus</a><a href="#calendar">Plan</a><a href="#learning">Activities</a><a href="#assessment">Assessment</a><a href="#contact">Contact</a><a href="#exit-ticket">Exit Ticket</a></nav>
 </header>
 <main>
 <section class="hero" id="home">
@@ -26,7 +26,72 @@
 <article class="activity-card case-card"><div class="activity-top"><span class="pill pill-teal">DESIGN CASE</span><span class="activity-icon">⌘</span></div><h3>Build a responsible campus assistant</h3><p>A campus assistant must answer questions using approved policies and course resources. It must not invent a rule when the answer is missing.</p><div class="case-steps"><div><b>1</b><span><strong>Ground the answer</strong><small>Retrieve from approved material.</small></span></div><div><b>2</b><span><strong>Handle uncertainty</strong><small>Ask for clarification or say what is unknown.</small></span></div><div><b>3</b><span><strong>Escalate safely</strong><small>Send sensitive or unresolved cases to a human.</small></span></div></div><label for="caseReflection">Your design note</label><textarea id="caseReflection" rows="3" placeholder="What should the assistant do if a policy is missing?"></textarea><button id="saveReflection" class="button outline">Save note on this page</button><p id="reflectionStatus" class="small-note" aria-live="polite"></p></article></div></section>
 <section class="section assessment-section" id="assessment"><div class="section-heading"><div><p class="eyebrow">06 / ASSESSMENT</p><h2>Assessment at a glance</h2></div><p>The supplied syllabus specifies Continuous Internal Evaluation and Semester End Examination.</p></div><div class="assessment-bar"><div class="assessment-cie"><strong>40</strong><span>marks · CIE</span><small>Continuous Internal Evaluation</small></div><div class="assessment-see"><strong>60</strong><span>marks · SEE</span><small>Semester End Examination</small></div></div><div class="assessment-note"><span>!</span><p>Use the examination pattern and dates officially communicated by the department. Sample questions and activities on this site are for learning support only.</p></div></section>
 <section class="section responsible-section"><div class="responsible-panel"><div><p class="eyebrow">07 / RESPONSIBLE AI</p><h2>Use AI as a learning partner, not a substitute for understanding.</h2></div><div class="responsible-points"><p><b>Verify.</b> Check facts, reasoning, code and references.</p><p><b>Disclose.</b> Follow faculty instructions on AI-use acknowledgement.</p><p><b>Protect.</b> Never enter personal, confidential or restricted institutional data into unapproved tools.</p><p><b>Own your learning.</b> Be ready to explain and defend submitted work.</p></div></div></section>
+
+<section class="section contact-section" id="contact">
+  <div class="section-heading"><div><p class="eyebrow">08 / GET IN TOUCH</p><h2>Contact & course support</h2></div><p>Use the verified contact details supplied by the course coordinator or department.</p></div>
+  <div class="contact-grid">
+    <article class="contact-card"><span class="contact-icon">✉</span><h3>Email</h3><p>For questions about course topics, activities or website content, contact the course coordinator using the email address provided by your department.</p></article>
+    <article class="contact-card"><span class="contact-icon">⌂</span><h3>Department</h3><p>Computer Science and Engineering<br>Lords Institute of Engineering and Technology</p><p class="muted">Please confirm office hours and official contact details with the department.</p></article>
+    <article class="contact-card"><span class="contact-icon">↗</span><h3>Course website</h3><p>Return to the course resources and self-check activities anytime.</p><a class="button outline" href="#home">Back to course top ↑</a></article>
+  </div>
+  <p class="small-note">No phone number or email address has been published here because a verified contact address was not provided. Add official details before sharing the website publicly.</p>
+</section>
+
+<section class="section exit-ticket-section" id="exit-ticket">
+  <div class="exit-ticket-panel">
+    <div class="exit-ticket-heading"><p class="eyebrow">09 / EXIT TICKET</p><h2>Pause, reflect, and plan your next step.</h2><p>Use this short reflection to review your learning after a session. This sample form does not submit or store responses online.</p></div>
+    <form id="exitTicketForm" class="exit-ticket-form">
+      <label for="exitTakeaway">1. What is the most valuable insight you gained?</label>
+      <textarea id="exitTakeaway" rows="3" placeholder="Write a short reflection…" required></textarea>
+      <label for="exitConfidence">2. How confident do you feel about today's topic?</label>
+      <select id="exitConfidence" required><option value="">Choose one</option><option>Very confident</option><option>Mostly confident</option><option>Somewhat confident</option><option>I need more practice</option></select>
+      <label for="exitAction">3. What will you practise next?</label>
+      <textarea id="exitAction" rows="2" placeholder="Name one next step…" required></textarea>
+      <label for="exitFeedback">4. What could make the next learning session better? (Optional)</label>
+      <textarea id="exitFeedback" rows="2" placeholder="Share a suggestion…"></textarea>
+      <label class="consent-line"><input id="exitConsent" type="checkbox"> I understand this page does not send my answers to the instructor.</label>
+      <div class="exit-actions"><button type="submit" class="button primary">Review my reflection</button><button type="reset" class="button outline">Clear answers</button></div>
+      <p id="exitTicketStatus" class="small-note" aria-live="polite"></p>
+      <div id="exitTicketReview" class="exit-review" hidden></div>
+    </form>
+  </div>
+</section>
 </main>
-<footer><div class="footer-brand"><span class="brand-mark">AI</span><span><strong>AI Smart Course Portal</strong><small>U24CD501 · Artificial Intelligence</small></span></div><p>Prepared as an FDP capstone learning resource using the supplied syllabus. Confirm all academic details with the course coordinator.</p><div class="footer-links"><a href="#home">Back to top ↑</a><a href="README.md">Website setup guide</a></div></footer>
+<footer><div class="footer-brand"><span class="brand-mark">AI</span><span><strong>AI Smart Course Portal</strong><small>U24CD501 · Artificial Intelligence</small></span></div><p>Prepared as an FDP capstone learning resource using the supplied syllabus. Confirm all academic details with the course coordinator.</p><div class="footer-links"><a href="#contact">Contact</a><a href="#exit-ticket">Exit ticket</a><a href="#home">Back to top ↑</a><a href="README.md">Website setup guide</a></div></footer>
 <script src="script.js"></script>
-</body></html>
+<script>
+(() => {
+  const form = document.getElementById('exitTicketForm');
+  const status = document.getElementById('exitTicketStatus');
+  const review = document.getElementById('exitTicketReview');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const takeaway = document.getElementById('exitTakeaway').value.trim();
+    const confidence = document.getElementById('exitConfidence').value;
+    const action = document.getElementById('exitAction').value.trim();
+    const feedback = document.getElementById('exitFeedback').value.trim();
+    review.replaceChildren();
+    const heading = document.createElement('h3');
+    heading.textContent = 'Your reflection';
+    review.appendChild(heading);
+    [['Key takeaway', takeaway], ['Confidence', confidence], ['Next practice step', action], ['Suggestion', feedback || 'No suggestion provided']].forEach(([label, value]) => {
+      const p = document.createElement('p');
+      const strong = document.createElement('strong');
+      strong.textContent = label + ': ';
+      p.append(strong, document.createTextNode(value));
+      review.appendChild(p);
+    });
+    review.hidden = false;
+    status.textContent = 'Reflection shown below for your review. Nothing has been sent or saved to a server.';
+    review.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+  form.addEventListener('reset', () => {
+    review.hidden = true;
+    review.replaceChildren();
+    status.textContent = 'Answers cleared from this page.';
+  });
+})();
+</script>
+</body>
+</html>
